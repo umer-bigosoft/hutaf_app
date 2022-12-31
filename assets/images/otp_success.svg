@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="197.709" height="162.709" viewBox="0 0 197.709 162.709">
+  <g id="Group_34" data-name="Group 34" transform="translate(-107.868 -448.705)">
+    <path id="Path_354" data-name="Path 354" d="M260.434,228.29a4.9,4.9,0,1,1,4.9-4.9,4.9,4.9,0,0,1-4.9,4.9Zm0-8.99a4.086,4.086,0,1,0,4.086,4.086A4.086,4.086,0,0,0,260.434,219.3Z" transform="translate(-96 230.222)" fill="#3f3d56"/>
+    <path id="Path_355" data-name="Path 355" d="M864.507,586.978H856.44v-8.067h8.067Zm-7.446-.621h6.826v-6.826h-6.826Z" transform="translate(-558.931 -8.261)" fill="#3f3d56"/>
+    <path id="Path_356" data-name="Path 356" d="M331.858,560.524l-5.5-5.9,5.9-5.5,5.5,5.9Zm-4.625-5.869,4.656,4.992,4.992-4.656L332.224,550Z" transform="translate(-218.487 -28.129)" fill="#3f3d56"/>
+    <circle id="Ellipse_244" data-name="Ellipse 244" cx="76.301" cy="76.301" r="76.301" transform="translate(144.264 458.759)" fill="#b46576" opacity="0.256"/>
+    <circle id="Ellipse_254" data-name="Ellipse 254" cx="29.5" cy="29.5" r="29.5" transform="translate(140 526)" fill="#fff"/>
+    <rect id="Rectangle_86" data-name="Rectangle 86" width="74" height="129" transform="translate(222.966 462.476) rotate(17)" fill="#fff"/>
+    <g id="smartphone-call" transform="translate(214.312 455.447) rotate(17)">
+      <path id="Path_395" data-name="Path 395" d="M77.457,0H16.56A9.251,9.251,0,0,0,7.334,9.226V127.363a9.255,9.255,0,0,0,9.226,9.23h60.9a9.249,9.249,0,0,0,9.226-9.226V9.226A9.251,9.251,0,0,0,77.457,0ZM37.267,6.65H56.749a1.118,1.118,0,0,1,0,2.236H37.267a1.118,1.118,0,0,1,0-2.236Zm9.741,125.329a4.615,4.615,0,1,1,4.613-4.617A4.613,4.613,0,0,1,47.008,131.979Zm33.254-12.461H13.754V14.631H80.263Z" fill="#2e2d40"/>
+    </g>
+    <path id="tick" d="M38.333,0A38.333,38.333,0,1,0,76.667,38.333,38.377,38.377,0,0,0,38.333,0ZM60.345,31.858,36.262,55.941a5.421,5.421,0,0,1-7.666,0L16.322,43.667A5.421,5.421,0,1,1,23.988,36l8.44,8.44L52.678,24.192a5.421,5.421,0,0,1,7.667,7.667Z" transform="translate(129.814 517)" fill="#b46576"/>
+  </g>
+</svg>

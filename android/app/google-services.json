@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "685186336388",
+    "project_id": "hutaf-5940a",
+    "storage_bucket": "hutaf-5940a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685186336388:android:ea05cfd80cba8c715b64d1",
+        "android_client_info": {
+          "package_name": "om.hutaf.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685186336388-9mcvqcda80u0j64orpptoqe9tnd96ute.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "om.hutaf.app",
+            "certificate_hash": "c05e05ecdaafdb1f571f47cc902eb38f5725ac8a"
+          }
+        },
+        {
+          "client_id": "685186336388-e9gmms3789kepe29cunfgp45g4pp6ojk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjYvcCOVqwVUiPtjW9TtikXaj1s3CimVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685186336388-e9gmms3789kepe29cunfgp45g4pp6ojk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
