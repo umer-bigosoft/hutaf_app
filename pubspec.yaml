@@ -1,0 +1,127 @@
+name: Hutaf
+description: Hutaf app :)
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.5.0+25
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.0
+  flutter_svg: ^0.22.0
+  shimmer: ^1.1.2
+  fluro: ^1.7.8
+  overlay_support: ^1.2.1
+  easy_localization: ^3.0.0
+  shared_preferences: ^2.0.7
+  kf_drawer: ^1.1.2
+  flutter_inner_drawer: ^0.5.7+2
+  flutter_icons: ^1.1.0
+  url_launcher: ^6.0.10
+  url_launcher_platform_interface: ^2.0.4
+  carousel_slider: ^3.0.0
+  flutter_slidable: ^0.5.7
+  percent_indicator: ^2.1.9
+  flutter_rating_bar: ^3.2.0+1
+  provider: ^5.0.0
+  intl_phone_field: ^2.1.0
+  lottie: ^1.2.1
+
+  # firebase
+  firebase_core: ^1.6.0
+  firebase_auth: ^3.1.0
+  firebase_auth_web: ^3.1.0
+  cloud_firestore: ^2.5.1
+  firebase_storage: ^10.0.3
+  plugin_platform_interface: ^2.0.0
+  cloud_functions: ^3.2.4
+  firebase_remote_config: ^0.11.0+2
+  firebase_messaging: ^11.2.6
+
+  intl: ^0.17.0
+  flutter_share: ^1.0.3
+  audioplayers: ^0.20.1
+  path_provider: ^2.0.3
+  path_provider_windows: ^2.0.3
+  in_app_purchase: ^1.0.0
+  image_picker: ^0.8.4
+  modal_bottom_sheet: ^2.0.0
+  cached_network_image: ^3.1.0
+  loading_indicator: ^3.0.2
+  ionicons: ^0.1.2
+ 
+
+  # video
+  flick_video_player:
+    git:
+      url: https://github.com/umer-bigosoft/flick-video-player.git
+      ref: dce77b4b7891ff5b2f5a408e5a01135b983e59d3
+
+  country_picker: ^2.0.8
+  flutter_local_notifications: ^9.2.0
+ 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lints: ^1.0.1
+
+
+flutter:
+
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/hutaf.png
+    - assets/images/hutaf_1.png
+    - assets/images/book_loading.png
+    - assets/images/course_loading.png
+    - assets/images/ads_loading.png
+    - assets/images/hutaf_logo.svg
+    - assets/images/hutaf_logo.png
+    - assets/images/onboarding_1.svg
+    - assets/images/onboarding_2.svg
+    - assets/images/onboarding_3.svg
+    - assets/images/onboarding_4.svg
+    - assets/images/boy.svg
+    - assets/images/girl.svg
+    - assets/images/otp_success.svg
+    - assets/images/bottom_sheet_line.svg
+    - assets/images/empty_books.svg
+    - assets/images/empty_courses.svg
+    - assets/images/empty_search_results.svg
+    - assets/images/books.svg
+    - assets/images/courses.svg
+    - assets/images/subscribtions.svg
+    - assets/images/next_30_seconds.svg
+    - assets/images/next.svg
+    - assets/images/play.svg
+    - assets/images/previous_30_seconds.svg
+    - assets/images/previous.svg
+    - assets/images/error_image.svg
+    - assets/images/empty_image.svg
+    - assets/images/speical_needs_courses.svg
+    - assets/animations/loading.json
+    - assets/i18n/ar.json
+    - assets/i18n/en.json
+
+  fonts:
+    - family: Tajwal
+      fonts:
+        - asset: assets/fonts/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Tajawal-ExtraBold.ttf
+          weight: 900
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Medium.ttf

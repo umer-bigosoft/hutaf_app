@@ -278,8 +278,7 @@ class _SubscribtionsState extends State<Subscribtions> {
                                         color: AppColors.purple)),
                             InkWell(
                               onTap: () {
-                                Navigator.pushNamed(
-                                    context, ScreensName.privacyPolicy);
+                                Navigator.pushNamed(context, ScreensName.rules);
                               },
                               child: Text(
                                 "  الشروط والحكام",

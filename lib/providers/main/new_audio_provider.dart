@@ -87,7 +87,7 @@ class NewAudioProvider with ChangeNotifier {
                       .inSeconds
                       .abs() +
                   2
-              : Duration(seconds: totalDuration.inSeconds - position.inSeconds)
+              : Duration(seconds: timerDuration.inSeconds.abs())
                       .inSeconds
                       .abs() -
                   1);

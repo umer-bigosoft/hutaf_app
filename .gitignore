@@ -144,8 +144,6 @@
 
 ios/Flutter/flutter_export_environment.sh
 
-pubspec.yaml
-
 lib/main.dart
 
 .flutter-plugins-dependencies

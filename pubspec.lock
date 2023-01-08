@@ -312,10 +312,12 @@ packages:
   flick_video_player:
     dependency: "direct main"
     description:
-      name: flick_video_player
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.2.1"
+      path: "."
+      ref: dce77b4b7891ff5b2f5a408e5a01135b983e59d3
+      resolved-ref: dce77b4b7891ff5b2f5a408e5a01135b983e59d3
+      url: "https://github.com/umer-bigosoft/flick-video-player.git"
+    source: git
+    version: "0.2.0"
   fluro:
     dependency: "direct main"
     description:
