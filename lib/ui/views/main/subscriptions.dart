@@ -315,7 +315,9 @@ class _SubscribtionsState extends State<Subscribtions> {
                                   subscriptions[selectedIndex]
                                       .balance
                                       .toString() +
-                                  ' الشهور'
+                                  (subscriptions[selectedIndex].balance > 10
+                                      ? 'شهر'
+                                      : 'أشهر')
                               : 'اشترك في باقة ' +
                                   subscriptions[selectedIndex]
                                       .price
@@ -324,7 +326,9 @@ class _SubscribtionsState extends State<Subscribtions> {
                                   subscriptions[selectedIndex]
                                       .balance
                                       .toString() +
-                                  ' الشهور',
+                                  (subscriptions[selectedIndex].balance > 10
+                                      ? 'شهر'
+                                      : 'أشهر'),
                           buttonHeight: layoutSize.width * 0.12,
                           buttonWidth: layoutSize.width,
                           fontSize: layoutSize.width * 0.045,
@@ -365,7 +369,9 @@ class _SubscribtionsState extends State<Subscribtions> {
                                       subscriptions[selectedIndex]
                                           .balance
                                           .toString() +
-                                      ' الشهور'
+                                      (subscriptions[selectedIndex].balance > 10
+                                          ? 'شهر'
+                                          : 'أشهر')
                                   : 'اشترك في باقة ' +
                                       subscriptions[selectedIndex]
                                           .price
@@ -374,7 +380,9 @@ class _SubscribtionsState extends State<Subscribtions> {
                                       subscriptions[selectedIndex]
                                           .balance
                                           .toString() +
-                                      ' الشهور',
+                                      (subscriptions[selectedIndex].balance > 10
+                                          ? 'شهر'
+                                          : 'أشهر'),
                               buttonHeight: layoutSize.width * 0.12,
                               buttonWidth: layoutSize.width,
                               fontSize: layoutSize.width * 0.045,

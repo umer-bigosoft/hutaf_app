@@ -364,11 +364,21 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                               );
                       },
                     ),
-                    SizedBox(height: layoutSize.height * 0.04),
-                    menuSection(layoutSize, 'menu.my_suggestions'.tr(),
-                        Icons.text_snippet_rounded, () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (_) => SuggestionModal()));
+                    Consumer<AuthProvider>(builder: (context, auth, child) {
+                      return auth.isLoggedIn
+                          ? SizedBox(height: layoutSize.height * 0.04)
+                          : Container();
+                    }),
+                    Consumer<AuthProvider>(builder: (context, auth, child) {
+                      return auth.isLoggedIn
+                          ? menuSection(layoutSize, 'menu.my_suggestions'.tr(),
+                              Icons.text_snippet_rounded, () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (_) => SuggestionModal()));
+                            })
+                          : Container();
                     }),
                     SizedBox(height: layoutSize.height * 0.04),
                     menuSection(
