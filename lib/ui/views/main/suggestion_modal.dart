@@ -132,7 +132,9 @@ class _SuggestionModalState extends State<SuggestionModal> {
                                         listen: false)
                                     .user
                                     .uid,
-                                'suggestion': emailController.text
+                                'suggestion': emailController.text,
+                                'createdAt':
+                                    DateTime.now().millisecondsSinceEpoch
                               });
 
                               setState(() {
