@@ -111,12 +111,12 @@ class NewAudioProvider with ChangeNotifier {
       notifyListeners();
     });
 
-    audioPlayer.onAudioPositionChanged.listen((updatedPosition) {
+    audioPlayer.onDurationChanged.listen((updatedPosition) {
       position = updatedPosition;
 
       notifyListeners();
     });
-    audioPlayer.onPlayerCompletion.listen((event) {
+    audioPlayer.onPlayerComplete.listen((event) {
       // position = Duration(seconds: 0);
       audioState = AudioPlayerState.Stopped;
       if (!_isSample) {
@@ -125,11 +125,11 @@ class NewAudioProvider with ChangeNotifier {
     });
 
     audioPlayer.onPlayerStateChanged.listen((playerState) {
-      if (playerState == PlayerState.STOPPED)
+      if (playerState == PlayerState.stopped)
         audioState = AudioPlayerState.Stopped;
-      if (playerState == PlayerState.PLAYING)
+      if (playerState == PlayerState.playing)
         audioState = AudioPlayerState.Playing;
-      if (playerState == PlayerState.PAUSED)
+      if (playerState == PlayerState.paused)
         audioState = AudioPlayerState.Paused;
       notifyListeners();
     });
@@ -216,13 +216,12 @@ class NewAudioProvider with ChangeNotifier {
 
     ///
     ///
-    await audioPlayer.play(exists ? file.path : url,
+    await audioPlayer.play(UrlSource(exists ? file.path : url),
         position: reset
             ? Duration.zero
             : minute > 0
                 ? Duration(seconds: minute)
-                : null,
-        isLocal: exists);
+                : null);
 
     // print('played');
     // if (minute > 0) {

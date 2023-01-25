@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 class AudioProvider extends ChangeNotifier {
   Duration totalDuration;
   Duration position;
-  PlayerState audioState = PlayerState.PAUSED;
+  PlayerState audioState = PlayerState.paused;
   String _chapterUrl = '';
   String _bookCover = '';
   String _title = '';

@@ -55,7 +55,7 @@ class _BookChapterState extends State<BookChapter>
     onCompleteSubscription =
         Provider.of<NewAudioProvider>(context, listen: false)
             .audioPlayer
-            .onPlayerCompletion
+            .onPlayerComplete
             .listen((data) {
       onNext();
     });

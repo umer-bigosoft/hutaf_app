@@ -31,8 +31,44 @@ class _NoteListItemState extends State<NoteListItem> {
     var dayOfTheWeek = DateFormat('EEEE').format(formatedDate);
 
     return Slidable(
-      actionPane: SlidableDrawerActionPane(),
-      actionExtentRatio: 0.24,
+      startActionPane: ActionPane(motion: DrawerMotion(), children: [
+        SlidableAction(
+          label: 'notes.share'.tr(),
+          backgroundColor: AppColors.darkGrey2,
+          icon: Icons.share_rounded,
+          onPressed: (context) {
+            Provider.of<NoteProvider>(context, listen: false)
+                .shareNote(widget.note.title, widget.note.text);
+          },
+        ),
+        SlidableAction(
+          label: 'notes.delete'.tr(),
+          backgroundColor: AppColors.darkPink,
+          icon: Icons.delete_rounded,
+          onPressed: (context) {
+            return showDialog(
+              context: context,
+              barrierDismissible: false,
+              builder: (context) {
+                return CustomDialog(
+                  title: 'notes.are_you_sure_you_will_delete'.tr(),
+                  buttonText: 'menu.yes'.tr(),
+                  buttonHandler: () {
+                    Navigator.pop(context);
+                    Provider.of<NoteProvider>(context, listen: false)
+                        .deleteNote(widget.note.docId);
+                  },
+                  textButtonText: 'menu.no'.tr(),
+                  textHandler: () {
+                    Navigator.pop(context);
+                  },
+                );
+              },
+            );
+          },
+        )
+      ]),
+      // actionExtentRatio: 0.24,
       child: CupertinoButton(
         minSize: 1,
         padding: EdgeInsets.zero,
@@ -98,9 +134,10 @@ class _NoteListItemState extends State<NoteListItem> {
                   Text(
                     'يوم ' + dayOfTheWeek,
                     textScaleFactor: 1,
-                    style: Theme.of(context).primaryTextTheme.headline6.copyWith(
-                          fontSize: layoutSize.width * 0.03,
-                        ),
+                    style:
+                        Theme.of(context).primaryTextTheme.headline6.copyWith(
+                              fontSize: layoutSize.width * 0.03,
+                            ),
                   ),
                   Text(
                     dateFormat.format(formatedDate),
@@ -120,43 +157,6 @@ class _NoteListItemState extends State<NoteListItem> {
               arguments: widget.note);
         },
       ),
-      actions: <Widget>[
-        IconSlideAction(
-          caption: 'notes.share'.tr(),
-          color: AppColors.darkGrey2,
-          icon: Icons.share_rounded,
-          onTap: () {
-            Provider.of<NoteProvider>(context, listen: false)
-                .shareNote(widget.note.title, widget.note.text);
-          },
-        ),
-        IconSlideAction(
-          caption: 'notes.delete'.tr(),
-          color: AppColors.darkPink,
-          icon: Icons.delete_rounded,
-          onTap: () {
-            return showDialog(
-              context: context,
-              barrierDismissible: false,
-              builder: (context) {
-                return CustomDialog(
-                  title: 'notes.are_you_sure_you_will_delete'.tr(),
-                  buttonText: 'menu.yes'.tr(),
-                  buttonHandler: () {
-                    Navigator.pop(context);
-                    Provider.of<NoteProvider>(context, listen: false)
-                        .deleteNote(widget.note.docId);
-                  },
-                  textButtonText: 'menu.no'.tr(),
-                  textHandler: () {
-                    Navigator.pop(context);
-                  },
-                );
-              },
-            );
-          },
-        ),
-      ],
     );
   }
 }
