@@ -144,8 +144,6 @@
 
 ios/Flutter/flutter_export_environment.sh
 
-lib/main.dart
-
 .flutter-plugins-dependencies
 
 .vscode
