@@ -1,6 +1,5 @@
 import 'package:Hutaf/providers/auth/auth_provider.dart';
 import 'package:Hutaf/providers/main/archive_provider.dart';
-import 'package:Hutaf/ui/widgets/courses/course_item.dart';
 import 'package:Hutaf/ui/widgets/courses/home_course_row.dart';
 import 'package:Hutaf/ui/widgets/headers/main_screen_header_with_show_more.dart';
 import 'package:Hutaf/ui/widgets/loading/home_horizantal_list_loading.dart';

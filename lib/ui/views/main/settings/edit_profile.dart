@@ -218,7 +218,7 @@ class _EditProfileState extends State<EditProfile> {
             height: layoutSize.height * 0.075,
             width: layoutSize.height * 0.125,
             child: TextButton(
-                child: Text(
+                Widget: Text(
                   '${Utils.countryCodeToEmoji(selectedCountry.countryCode)} +${selectedCountry.phoneCode}',
                   style: Theme.of(context).primaryTextTheme.headline1.copyWith(
                         fontSize: layoutSize.width * 0.042,

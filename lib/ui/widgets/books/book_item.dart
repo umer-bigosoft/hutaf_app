@@ -1,5 +1,4 @@
 import 'package:Hutaf/utils/colors.dart';
-import 'package:Hutaf/utils/free_custom_path.dart';
 import 'package:Hutaf/utils/general_vars.dart';
 import 'package:Hutaf/utils/screens_name.dart';
 import 'package:cached_network_image/cached_network_image.dart';

@@ -1,4 +1,3 @@
-import 'package:Hutaf/models/main/home_advertisement_model.dart';
 import 'package:Hutaf/providers/main/home_provider.dart';
 import 'package:Hutaf/ui/widgets/loading/home_carousel_slider_loading.dart';
 import 'package:Hutaf/utils/general_vars.dart';

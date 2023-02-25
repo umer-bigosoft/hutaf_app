@@ -505,7 +505,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
               Align(
                 alignment: Alignment.bottomRight,
                 child: Text(
-                  'App version 2.0.0',
+                  'App version 2.1.1',
                   textScaleFactor: 1,
                   style: Theme.of(context).textTheme.headline5.copyWith(
                         fontSize: layoutSize.width * 0.04,

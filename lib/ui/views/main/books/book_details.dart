@@ -363,7 +363,7 @@ class _BookDetailsState extends State<BookDetails> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
-                      book.isFree ? 'book_details.free'.tr() : 'اشترك الآن',
+                      book.isFree ?? false ? 'book_details.free'.tr() : 'اشترك الآن',
                       textScaleFactor: 1,
                       style:
                           Theme.of(context).primaryTextTheme.headline1.copyWith(

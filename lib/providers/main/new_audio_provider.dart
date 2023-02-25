@@ -9,7 +9,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:path_provider/path_provider.dart';
 
 enum AudioPlayerState { Stopped, Playing, Paused }
 
@@ -117,7 +116,6 @@ class NewAudioProvider with ChangeNotifier {
       notifyListeners();
     });
     audioPlayer.onPlayerComplete.listen((event) {
-      // position = Duration(seconds: 0);
       audioState = AudioPlayerState.Stopped;
       if (!_isSample) {
         updatePosition(position);
@@ -205,18 +203,14 @@ class NewAudioProvider with ChangeNotifier {
         } catch (error) {
           print(error);
         }
-        isLoading = false;
         // notifyListeners();
       }
     }
 
-    final appDocDir = await getExternalStorageDirectory();
-    final file = File('${appDocDir.absolute.path + '/' + url}.mpeg');
-    bool exists = file.existsSync();
-
+    isLoading = false;
     ///
     ///
-    await audioPlayer.play(UrlSource(exists ? file.path : url),
+    await audioPlayer.play(UrlSource(url),
         position: reset
             ? Duration.zero
             : minute > 0

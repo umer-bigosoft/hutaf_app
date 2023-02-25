@@ -19,7 +19,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -246,7 +245,7 @@ class _BookChapterState extends State<BookChapter>
                                   Align(
                                     alignment: Alignment.topRight,
                                     child: TextButton(
-                                        child: Text(
+                                        Widget: Text(
                                           'Done',
                                           style: TextStyle(
                                               color: AppColors.darkPink,
@@ -281,7 +280,7 @@ class _BookChapterState extends State<BookChapter>
 
                       return TextButton(
                         onPressed: callback,
-                        child: Text(
+                        Widget: Text(
                           '${seconds.floor().toString().padLeft(2, '0')} : ${minutes.abs().toInt().toString().padLeft(2, '0')} ',
                           style: TextStyle(color: AppColors.white),
                         ),

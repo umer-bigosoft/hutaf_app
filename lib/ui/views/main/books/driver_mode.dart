@@ -1,4 +1,3 @@
-import 'package:Hutaf/providers/main/audio_provider.dart';
 import 'package:Hutaf/providers/main/new_audio_provider.dart';
 import 'package:Hutaf/utils/colors.dart';
 import 'package:flutter/cupertino.dart';

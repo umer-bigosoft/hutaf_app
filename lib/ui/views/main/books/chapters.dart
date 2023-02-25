@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:Hutaf/models/books/book_model.dart';
 import 'package:Hutaf/providers/auth/auth_provider.dart';
 import 'package:Hutaf/providers/main/books_provider.dart';
@@ -15,7 +13,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 
 class Chapters extends StatefulWidget {
@@ -45,11 +42,8 @@ class _ChaptersState extends State<Chapters> {
     _isInit = false;
   }
 
-  String root = '';
-
   @override
   void initState() {
-    getExternalStorageDirectory().then((value) => root = value.absolute.path);
     super.initState();
   }
 
